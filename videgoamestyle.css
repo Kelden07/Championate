@@ -11,14 +11,18 @@ body{
     padding: 25px;
 }
 
+.dropbtn{
+    color: white;
+}
 .nav {
     background-color: rgb(16, 59, 179);
     overflow: hidden;
+    
   }
   
 .nav a {
     float: left;
-    color: black;
+    color: white;
     text-align: center;
     padding: 15px 16px;
     text-decoration: none;
@@ -43,7 +47,7 @@ body{
 }
 .nav a:hover .dropdown:hover . .dropbtn:hover{
    background-color: #ddd;
-   color: black;
+   color: white;
 }
 .drop-content{
     display: none;
@@ -68,7 +72,7 @@ body{
 }
 .nav a.active {
     background-color: transparent;
-    color: black;
+    color: white;
 }
 
 header{
@@ -158,4 +162,8 @@ h2{
 
 .post {
     width: 500px
+}
+
+.img4{
+    width: 50%;
 }

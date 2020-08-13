@@ -9,7 +9,7 @@ body{
   
 .nav a {
     float: left;
-    color: black;
+    color: white;
     text-align: center;
     padding: 15px 16px;
     text-decoration: none;
@@ -33,7 +33,7 @@ body{
 }
 .nav a:hover .dropdown:hover  .dropbtn:hover{
    background-color: #ddd;
-   color: black;
+   color: white;
    font-family: 'Mulish', sans-serif;
 }
 .drop-content{
@@ -59,9 +59,11 @@ body{
 }
 .nav a.active {
     background-color: transparent;
-    color: black;
+    color: white;
 }
-
+.dropbtn{
+    color: white;
+}
 h1{
     color: rgb(0, 153, 255);
     text-align: center;
@@ -76,7 +78,7 @@ p{
 }
 
 .img4{
-
+    width: 15%;
     padding: 10px;
 }
 
