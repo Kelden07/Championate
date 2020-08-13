@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&family=Suwannaphum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Suwannaphum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <meta charset="UTF-8">
+    <script src ="animereview.css"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Championate</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="271058559761-1mjcu6mtb35g0f99epbj2gqgc03br9op.apps.googleusercontent.com">
+    <div>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+        
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyDlnXKk7fo2PFELRGpgA8N3LslOAJRQF8I",
+            authDomain: "championate-861b5.firebaseapp.com",
+            databaseURL: "https://championate-861b5.firebaseio.com",
+            projectId: "championate-861b5",
+            storageBucket: "championate-861b5.appspot.com",
+            messagingSenderId: "101061813143",
+            appId: "1:101061813143:web:694a36bb0b9b945236dad2"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+        </script>
+            </div>
+</body>
+    <link rel="stylesheet" href="review.css">
+    <script src="review.js" defer></script>
+</head>
+<body>
+    <div class="nav">
+        <a class="active" href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Popular Reviews
+                <i class="Drop"></i>
+            </button>
+            <div class="drop-content">
+                <a href="animereview.html">Anime Reviews</a>
+                <a href="videogamereview.html">Game Reviews</a>
+            </div>
+        </div>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+     <!--Sign In/ Sign Out-->
+     <div class="signs">
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <a href="#" class="signOut" onclick="onSignOut();">Sign out</a>
+    </div>
+    <div class="allMessages">
+        
+    </div>
+    
+    <!--For user to input messages-->
+    <div class="userContainer">
+        <form>
+            <div class="inputContainer">
+                <div class="singleInput">
+                    <label for="username">Your name:</label>
+                    <input id="username" type="text">
+                </div>
+                <div class="singleInput">
+                    <label for="message">News:</label>
+                    <input id="message" type="text">
+                </div>
+            </div>
+            <button id="submitButton">Submit</button>
+        </form>
+    </div>
+</html>
